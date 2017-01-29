@@ -1,0 +1,261 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Stylish Curriculum Vitae
+% LaTeX Template
+% Version 1.0 (18/7/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Stefano (http://stefano.italians.nl/)
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper, oneside, final]{scrartcl} % Paper options using the scrartcl class
+
+\usepackage{scrpage2} % Provides headers and footers configuration
+\usepackage{titlesec} % Allows creating custom \section's
+\usepackage{marvosym} % Allows the use of symbols
+\usepackage{tabularx,colortbl} % Advanced table configurations
+\usepackage{fontspec} % Allows font customization
+\usepackage{pbox}
+\usepackage{enumitem}
+\usepackage[a4paper,left=2cm,right=2cm,bottom=1cm]{geometry}
+\usepackage{lastpage}
+\usepackage{my_personal_info}
+\usepackage[colorlinks=false,
+	hidelinks=true,
+	pdfauthor={\myname \mysurname},
+	pdftitle={\myname \mysurname 's  Curriculum Vitae},
+	pdfsubject={Curriculum Vitae},
+	pdfkeywords={\myname \mysurname , Curriculum Vitae, CV}
+]{hyperref}
+
+
+
+\hyphenpenalty=10000
+\RequirePackage[absolute,overlay]{textpos}
+
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont{Roboto} % Main document font
+\newfontfamily\bodyfont[]{Roboto}
+\newfontfamily\thinfont[]{Roboto Thin}
+\newfontfamily\headingfont[]{Roboto Black}
+
+\setdescription{font=\headingfont}
+
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule] % Section formatting
+
+
+\pagestyle{scrheadings} % Print the headers and footers on all pages
+\clearscrheadfoot
+\cfoot{\thepage\ of \pageref{LastPage}}
+
+\addtolength{\voffset}{-0.5in} % Adjust the vertical offset - less whitespace at the top of the page
+%\addtolength{\textheight}{3cm} % Adjust the text height - less whitespace at the bottom of the page
+%\addtolength{\textheight}{4.2cm} % Adjust the text height - less whitespace at the bottom of the page
+
+\newcommand{\gray}{\rowcolor[gray]{.90}} % Custom highlighting for the work experience and education sections
+
+\newcommand{\subSecHeadWidth}{2.1cm}
+\setlength{\TPHorizModule}{\paperwidth}\setlength{\TPVertModule}{\paperheight}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{center} % Center everything in the document
+
+%----------------------------------------------------------------------------------------
+% HEADER SECTION
+%----------------------------------------------------------------------------------------
+
+{\hspace{-3.8cm} \addfontfeature{LetterSpace=5.0}\fontsize{34}{34}\selectfont\scshape {\thinfont \myname} {\bodyfont \mysurname}} % Your name at the top
+
+%\vspace{1.5cm} % Extra whitespace after the large name at the top
+\vspace{1.2cm} % Extra whitespace after the large name at the top
+
+
+%----------------------------------------------------------------------------------------
+%	CONTACT
+%----------------------------------------------------------------------------------------
+
+\begin{textblock}{0.2}[0,0](0.68,0.074)
+\begin{flushright}
+\thinfont{
+\mymailaddress \\ % Your mailing address
+{\Large\Letter} \myemail \\
+{\Large\Telefon} \mymobile % Your email address and phone number
+}
+\end{flushright}
+\end{textblock}
+
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Key Skills}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{\subSecHeadWidth}X}
+\textbf{Languages} & Kotlin, Java, JavaScript \\
+\textbf{Platforms} & Android, Web \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%-----------------------------------------------------------\RequirePackage[absolute,overlay]{textpos}-----------------------------
+
+\section{Work Experience}
+
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{\subSecHeadWidth}X}
+\gray Period & \textbf{Apr 2016 --- Present}\\
+\gray Employer & \textbf{Flat Circle} \hfill Cape Town, SA\\
+\gray Job Title & \textbf{Lead Android Developer}\\
+\gray Tech & android, android wear, kotlin, java\\
+Info & Cape Town mobile and web development agency. \\
+Duties & I develop and maintain Android projects for Flat Circle, its
+clients and business associates and mentor junior Android staff members. Notable projects: 
+\begin{description}
+\item[Blueair app:] App that controls Blueair's air purifiers and informs you about the indoor and outdoor air quality in real time.
+\end{description}
+\end{tabularx}
+
+\vspace{12pt}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{\subSecHeadWidth}X}
+\gray Period & \textbf{Jul 2015 --- Mar 2016}\\
+\gray Employer & \textbf{Spree} \hfill Cape Town, SA\\
+\gray Job Title & \textbf{Senior Android Developer}\\
+\gray Tech & android, groovy, java\\
+Info & spree.co.za is a fashion e-commerce website with a “magazine-styled shopping experience”. \\
+Duties & As sole Android developer I architected and developed their Android app. It remains the highest rated fashion e-commerce app in the Play Store in South Africa.
+\end{tabularx}
+
+\vspace{12pt}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{\subSecHeadWidth}X}
+\gray Period & \textbf{Feb 2015 --- May 2015 (Freelance)}\\
+\gray Employer & \textbf{Flat Circle} \hfill Cape Town, SA\\
+\gray Job Title & \textbf{Android Consultant}\\
+\gray Tech & android, java\\
+Info & Cape Town mobile and web development agency. \\
+Duties & I consulted and did some initial development for the Android launcher and media player software used on the Marshal London Android phone.
+\end{tabularx}
+
+\vspace{12pt}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{\subSecHeadWidth}X}
+\gray Period & \textbf{Dec 2013 --- Jun 2015}\\
+\gray Employer & \textbf{Takealot} \hfill Cape Town, SA\\
+\gray Job Title & \textbf{Senior Mobile Developer}\\
+\gray Tech & android, java, web, javascript\\
+Info & takealot.com is South Africa's biggest online store. \\
+Duties & I was originally brought in to overhaul Takealot's outdated, outsourced Android app. I was later also tasked with developing and maintaining the new mobi site.
+\begin{description}
+\item[Android app:] As sole developer on this app I was entrusted with significant creative control. Since the overhaul the app's ratings, installs and revenue significantly increased. The app remains the highest ranked South African e-commerce app in the Play Store.
+\item[Mobi site:] I was responsible for architecting the site as a single-page application connecting to a RESTful API and developing its logic. The new site saw marked increase in traffic and revenue over the old site and even won Best eCommerce Mobile Site Award at SA's eCommerce Awards 2015.
+\end{description}
+\end{tabularx}
+
+\vspace{12pt}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{\subSecHeadWidth}X}
+\gray Period & \textbf{Apr 2010 --- Nov 2013}\\
+\gray Employer & \textbf{Virtual Mobile Technologies (VMT)} \hfill Cape Town, SA\\
+\gray Job Title & \textbf{Senior Software Developer}\\
+\gray Tech & android, ios, windows phone, blackberry, java, java me, objective-c, javascript, html, c\#\\
+Info & VMT's product Ramp is a secure mobile enterprise application platform aimed at managing the complete enterprise environment required to create, deploy and manage secure native cross-platform mobile applications.\\
+Duties & I was mainly responsible for:
+\begin{itemize}
+\item Developing, maintaining and improving Ramp virtual machines (VMs) for platforms: Android, iOS, HTML5, Windows Phone, Windows Store, BlackBerry, Java ME.
+\item Developing Ramp plugins, e.g. barcode scanning and location detection.
+\item Helping to develop various mobile apps using the Ramp platform.
+\end{itemize}
+\end{tabularx}
+
+\vspace{12pt}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{\subSecHeadWidth}X}
+\gray Period & \textbf{2008 --- Mar 2010}\\
+\gray Employer & \textbf{Perceive} \hfill Stellenbosch, SA\\
+\gray Job Title & \textbf{Senior Software Developer}\\
+\gray Tech & python, opencv, numpy\\
+Info & Perceive provided intelligent surveillance solutions to various security concerns.\\
+Duties & I was responsible for the design and development of the surveillance system's:
+\begin{itemize}
+\item monitor station application that manages the surveillance system
+and displays the live camera streams.
+\item inter-component, network communication
+\item event database
+\item event media player
+\end{itemize}
+
+\end{tabularx}
+
+\vspace{12pt}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{\subSecHeadWidth}X}
+\gray Period & \textbf{2007 (Part-time)}\\
+\gray Employer & \textbf{Perceive} \hfill Stellenbosch, SA\\
+\gray Job Title & \textbf{Software Developer}\\
+\gray Tech & python, opencv, numpy\\
+Info & Perceive provided intelligent surveillance solutions to various security concerns.\\
+Duties & Assisted in the development of various surveillance algorithms, e.g. human detection and fall detection.
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\clearpage 
+\section{Education}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{\subSecHeadWidth}X}
+\gray Period & \textbf{Mar 2005 --- Feb 2009}\\
+\gray Degree & \textbf{Master of Science in Engineering (MScEng) in Applied Mathematics}\\
+\gray Rank & \textbf{cum laude}\\
+\gray University & \textbf{Stellenbosch University} \hfill Stellenbosch, SA\\
+%& Extra information about degree
+Thesis & \textit{Metric reconstruction of multiple rigid bodies}\\
+& Developed a Structure from Motion system that reconstructs from a video or photo sequence, the 3D structure and motion of multiple rigid bodies. The reconstruction is identical up to a similarity transformation and assumes a projective camera model with optional provision for camera calibration.\\ 
+\vspace{10pt}
+& An approach based on motion segmentation, matrix factorization and camera auto-calibration was taken.\\ 
+\end{tabularx}
+
+\vspace{12pt}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{\subSecHeadWidth}X}
+\gray Period & \textbf{Jan 2004 --- Feb 2005}\\
+\gray Degree & \textbf{Bachelor of Science with Honours (BScHons) in Computer Science}\\
+%\gray Rank & \textbf{With Distinction}\\
+\gray University & \textbf{Stellenbosch University} \hfill Stellenbosch, SA\\
+%& Extra information about degree
+Year Project & \textit{Constrained two-dimensional cutting stock problem: an exact approach}\\ 
+& Developed a system that attempts to maximize profit when a stock entity of fixed dimensions is guillotine-cut into smaller sub-entities of varied dimensions and profit.\\
+\vspace{10pt}
+& A bottom-up, best-first, branch-and-bound algorithm was implemented.
+\end{tabularx}
+
+\vspace{12pt}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{\subSecHeadWidth}X}
+\gray Period & \textbf{Jan 2001 --- Dec 2003}\\
+\gray Degree & \textbf{Bachelor of Science (BSc) in Mathematical Science}\\
+%\gray Rank & \textbf{With Distinction}\\
+\gray University & \textbf{Stellenbosch University} \hfill Stellenbosch, SA\\
+%& Extra information about degree
+Info & I majored in Computer Science and Applied Mathematics.
+\end{tabularx}
+
+
+%----------------------------------------------------------------------------------------
+
+\end{center}
+
+\end{document}
