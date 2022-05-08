@@ -2,5 +2,5 @@
 
 Note:
 - Edit my_personal_info_template.sty and rename to my_personal_info.sty.
-- Requires Roboto font installed on OS.
-- Compile with XeLaTex.
+- Compile with PDFLaTeX.
+- There are errors in log but pdf output is fine.

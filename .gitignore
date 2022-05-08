@@ -2,3 +2,8 @@ mycv.pdf
 my_personal_info.sty
 mycv_thin.pdf
 mycv_regular.pdf
+*.log
+*.aux
+*.out
+*.pdf
+*.gz
