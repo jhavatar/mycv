@@ -27,6 +27,7 @@
 }
 
 \usepackage{my_personal_info}
+\usepackage{enumitem}
 
 % Prevent hypenating word at line break
 \hyphenation{educators}
@@ -40,6 +41,7 @@
 \hyphenation{designed}
 \hyphenation{Android}
 \hyphenation{services}
+\hyphenation{eCommerce}
 
 %----------------------------------------------------------------------------------------
 
@@ -48,7 +50,15 @@
 %----------------------------------------------------------------------------------------
 %	TITLE AND CONTACT INFORMATION
 %----------------------------------------------------------------------------------------
-
+% \begin{center}
+%     \colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{\myname} \MakeUppercase{\mysurname}}}} {\huge\textcolor{white}{\textbf{, {\myqualification}}}}}  % First name
+% 	% \colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{\mysurname}}}}} % Last name
+ 
+%     % {\fontsize{36}{36}\selectfont\interthin FANCY\interheavy ROVER} \\ \bigskip
+%     {\color{icnclr}\faEnvelope[regular]} \href{mailto:hi@example.com}{fancy@rover.com} $|$ 
+%     {\color{icnclr}\faIcon{mobile-alt}} \href{tel:1234567890}{123 456 7890} $|$
+%     {\color{icnclr}\faLinkedinIn} \href{https://www.linkedin.com/}{linkedin.com/in/fancy\_rover}
+% \end{center}
 \begin{minipage}[t]{0.45\textwidth} % 45% of the page width for name
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 	
@@ -56,11 +66,11 @@
 	% If your name is very long, reduce the font size or make the minipage wider and reduce the others proportionately
 	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{\myname}}}}} % First name
 	
-	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{\mysurname}}}}} % Last name
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{\mysurname}}}}{\huge\textcolor{white}{\textbf{, {\myqualification}}}}} % Last name
 	
 	\vspace{6pt}
 	
-	{\huge Android Developer} % Career or current job title
+	{\huge Lead/Senior Android Developer} % Career or current job title
 \end{minipage}
 \begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the first row of icons
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
@@ -111,6 +121,14 @@
 %\end{center}
 
 %----------------------------------------------------------------------------------------
+%	PROFESSIONAL SUMMARY
+%----------------------------------------------------------------------------------------
+\cvsect{Professional summary}
+\parentryBasic{
+        Accomplished Mobile Developer with 14 years of Android experience. Delivered multiple successful apps across a variety of fields, from e-commerce and edutainment to smart devices. Well practiced and highly skilled in Kotlin, Java, and the Jetpack libraries.
+    }
+
+%----------------------------------------------------------------------------------------
 %	Expertise
 %----------------------------------------------------------------------------------------
 
@@ -126,9 +144,9 @@
 \begin{minipage}[t]{0.28\textwidth}
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 		
-	\texttt{rxJava}\\
+	\texttt{Android TV}\\
 	\texttt{Coroutines, Flow}\\
-	\texttt{LiveData}\\
+	\texttt{rxJava}\\
 	
 \end{minipage}
 \hfill
@@ -137,7 +155,7 @@
 		
 	\texttt{Dagger, Hilt}\\
 	\texttt{Room}\\
-	\texttt{Retrofit, OkHttp}\\
+	\texttt{Retrofit, OkHttp, Ktor}\\
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.08\textwidth}
@@ -154,72 +172,137 @@
 %----------------------------------------------------------------------------------------
 
 \cvsect{Experience}
-
 \begin{entrylist}
 	\entry
 		{2/2021 -- present\\\footnotesize{contract}}
-		{Paramount {\normalfont\small (USA)}}
+		{Noggin, Paramount {\normalfont\small - USA, remote}}
 		{Senior Android Developer}
-		{Paramount is a multinational mass media and entertainment conglomerate. It operates over 170 networks reaching 700 million subscribers in 180 countries. I work on the Noggin brand -- a preschool edutainment subscription service which provides a library of episodes, ebooks, and educational games. Originally I implemented new features and fixed bugs on the Android and Android TV app. I was later selected to join the team tasked with developing a new, more immersive version of the app where I am responsible for, among other things, the video player and video casting. \\ \texttt{Android}\slashsep\texttt{Android TV}\slashsep\texttt{Kotlin}\slashsep\texttt{Dagger}\slashsep\texttt{rxJava}\slashsep\texttt{Coroutines}\slashsep\texttt{LiveData}}
+        {
+            Noggin, a division of multinational mass media and entertainment conglomerate Paramount, is a preschool edutainment subscription service which provides a library of videos, ebooks, and educational games.
+            \begin{itemize}[nosep, leftmargin=*]
+                \item Won \textit{Best Learning App - Branded} at the 2024 Kidscreen Awards.
+                \item Picked from the original app's development team to develop the new more immersive version of the app.
+                \item Establish coding standards and architectural patterns.
+                \item Implement video playback and casting functionality.
+                \item Maintain the functionality and performance of the TV apps, ensuring seamless user experiences.
+            \end{itemize}
+            \texttt{Android}\pipesep\texttt{Android TV}\pipesep\texttt{Kotlin}\pipesep\texttt{Dagger}\pipesep\texttt{rxJava}\pipesep\texttt{Coroutines}\pipesep\texttt{Compose}
+        }
+        
 	\entry
 		{2/2021 -- present\\\footnotesize{contract}}
-		{Learning Tapestry {\normalfont\small (USA)}}
-		{Android Developer}
-		{Learning Tapestry provides innovation and infrastructure solutions to support learners and educators. I consult on Noggin - a Paramount app - where I implement Learning Tapestry's services.}
+		{Learning Tapestry {\normalfont\small -- USA, remote}}
+		{Android Consultant}
+		{
+            Provides innovation and infrastructure solutions to support learners and educators. 
+            \begin{itemize}[nosep, leftmargin=*]
+                \item Consult Paramount's Noggin app on using Learning Tapestry's services to drive their creation of learning experiences.
+            \end{itemize}
+        }
+        
 	\entry
 		{2/2021 -- present\\\footnotesize{freelance}}
-		{TopTal {\normalfont\small (USA)}}
+		{TopTal {\normalfont\small -- USA, remote}}
 		{Android Developer}
-		{TopTal is a global remote company that provides an exclusive freelancing platform for the top 3\% of talent.}
+		{
+            A global, exclusive freelancing platform for the top 3\% of talent.
+        }
+        
 	\entry
 		{8/2020 -- 1/2021\\\footnotesize{contract}}
-		{Teamwork {\normalfont\small (Ireland)}}
+		{Teamwork {\normalfont\small -- Ireland, remote}}
 		{Senior Android Developer}
-		{Teamwork creates task management and team collaboration software. I was responsible for the development of the new Teamwork project management app -- an improved, native Android rewrite of the original cross-platform version.\\ \texttt{Android}\slashsep\texttt{Kotlin}\slashsep\texttt{Dagger}\slashsep\texttt{rxJava}}
-	\entry
+		{
+            Task management and team collaboration software.
+            \begin{itemize}[nosep, leftmargin=*]
+                \item Developed the new Teamwork project management app, an enhanced native Android rewrite of the original cross-platform version.
+            \end{itemize} 
+            \texttt{Android}\pipesep\texttt{Kotlin}\pipesep\texttt{Dagger}\pipesep\texttt{rxJava}
+        }
+        
+    \entry
 		{4/2016 --- 7/2020\\\footnotesize{full time}}
-		{Flat Circle {\normalfont\small (South Africa)}}
+		{Flat Circle {\normalfont\small -- Cape Town, South Africa}}
 		{Lead Android Developer}
-		{Flat Circle was a mobile development agency which was aquired by TFG Labs in 2021. As team lead I was responsible for best architecture and design practices during app development, as well as the mentoring of junior Android staff.\vspace{5pt}
-		
-		Notable apps delivered:
-		{\small\begin{description}
-		\item[Blueair:] Blueair is a Swedish producer of award-winning, smart air purifiers and air quality sensors, available in over 60 countries. This app remotely controls your connected purifiers and informs you, in real time, about indoor and outdoor air quality.
-\item[Kin:] Plans, tracks, splits and settles shared expenses.
-\item[Times Select:] Provides subscribers with daily curated editions of opinion pieces, local news and world news.
-\item[TimesLIVE:] TimesLIVE is South Africa's second-biggest news website and Sunday Times is SA's biggest Sunday paper. This app combines both these publications for convenient reading on your phone and tablet.
-\item[Picup driver's app:] “Uber for package delivery”. The app connects drivers with available deliveries and performs the required navigation and package tracking.
-		\end{description}}\\ \texttt{Android}\slashsep\texttt{Android TV}\slashsep\texttt{Android Wear}\slashsep\texttt{Kotlin}\slashsep\texttt{Java}\slashsep\texttt{rxJava}}
+		{
+            Mobile development agency aquired by TFG Labs in 2021.
+            \begin{itemize}[nosep, leftmargin=*]
+                \item Establish coding standards and architectural patterns.
+                \item Led a team of developers, providing mentorship and guidance to foster professional growth and enhance technical skills.
+                \item Consistently delivered multiple apps on time, ensuring reliability and optimal performance: 
+                \begin{itemize}
+                    \item \textbf{Blueair} controls award winning, Swedish, smart air purifiers.
+                    \item \textbf{Kin} plans, tracks, splits and settles shared expenses.
+                    \item \textbf{TimesLIVE} and \textbf{Times Select} are digital versions of big South African news publications.
+                    \item \textbf{Picup driver's app} connects driver with available deliveries, where it performs navigation and package tracking.
+                \end{itemize}
+            \end{itemize}
+    		\texttt{Android}\pipesep\texttt{Android TV}\pipesep\texttt{Android Wear}\pipesep\texttt{Kotlin}\pipesep\texttt{Java}\pipesep\texttt{rxJava}
+        }
+  
 	\entry
 		{7/2015 --- 3/2016\\\footnotesize{full time}}
-		{Media24 - Spree {\normalfont\small (South Africa)}}
+		{Spree, Media24 {\normalfont\small -- Cape Town, South Africa}}
 		{Senior Android Developer}
-		{Media24 is South Africa's leading media company and part of the Naspers group. Spree was Media24's fashion e-commerce website with a “magazine-styled shopping experience,” before merging with Superbalist in 2018. As sole Android developer I architected and built the Spree Android app. The app was released a month ahead of schedule - resulting in considerable downloads and conversion rates on Black Friday, which the original schedule would have missed.\\ \texttt{Android}\slashsep\texttt{Groovy}}
+		{
+            A fashion e-commerce website with a “magazine-styled shopping experience” -- merged with Superbalist in 2018.
+            \begin{itemize}[nosep, leftmargin=*]
+                \item Established coding standards and architectural patterns as the sole Android developer.
+                \item Released app a month ahead of schedule - resulting in considerable downloads and conversion rates on Black Friday, which the original schedule would have missed.
+            \end{itemize}
+            \texttt{Android}\pipesep\texttt{Groovy}
+        }
+        
 	\entry
 		{2/2015 --- 5/2015\\\footnotesize{freelance}}
-		{Flat Circle {\normalfont\small (South Africa)}}
+		{Flat Circle {\normalfont\small -- Cape Town, South Africa}}
 		{Android Consultant}
-		{I consulted and initiated development on the Android launcher and media player software used on the \textit{Marshall London Android phone}. Marshall is one of the most recognized brands in audio equipment. According to \textit{The Verge}, the London phone is “one of the best low-end phones we've seen.”\\ \texttt{Android}\slashsep\texttt{Java}}
+        {
+            Mobile development agency acquired by TFG Labs in 2021. 
+            \begin{itemize}[nosep, leftmargin=*]
+                \item Consulted and initiated development on the Android launcher and media player used on the \textit{Marshall London Android phone}.
+                \item The London phone is “one of the best low-end phones we've seen.” according to \textit{The Verge}.
+            \end{itemize}
+    		\texttt{Android}\pipesep\texttt{Java}
+        }
+        
 	\entry
 		{12/2013 -- 6/2015\\\footnotesize{full time}}
-		{Takealot {\normalfont\small (South Africa)}}
+		{Takealot {\normalfont\small -- Cape Town, South Africa}}
 		{Senior Mobile Developer}
-		{Takealot is South Africa's biggest online store. I was originally brought in to overhaul Takealot's outdated, outsourced Android app. I was later also tasked with developing and maintaining a new mobile site. The app is consistently rated top 5 for shopping on the Play Store and the mobile site won Best eCommerce Mobile Site Award at SA's eCommerce Awards 2015.\\ \texttt{Android}\slashsep\texttt{Java}\slashsep\texttt{web}\slashsep\texttt{Javascript}}
+		{
+            South Africa's largest online retailer.
+            \begin{itemize}[nosep, leftmargin=*]
+                \item Overhauled Takealot's outdated, outsourced Android app - now consistently rated in the top 5 (in SA) for shopping on the Play Store.
+                \item Developed the new mobile site which won \textit{Best eCommerce Mobile Site} Award at SA's eCommerce Awards 2015.
+            \end{itemize}
+            \texttt{Android}\pipesep\texttt{Java}\pipesep\texttt{web}\pipesep\texttt{Javascript}
+        }
+  
 	\entry
 		{4/2010 -- 11/2013\\\footnotesize{full time}}
-		{Virtual Mobile Technologies {\normalfont\small (South Africa)}}
+		{Virtual Mobile Technologies {\normalfont\small -- Cape Town, South Africa}}
 		{Senior Software Developer}
-		{VMT's product Ramp was a secure mobile enterprise application platform aimed at managing a complete enterprise environment to build and deploy secure, native apps across multiple platforms. I developed and maintained Ramp virtual machines for multiple platforms, e.g. Android, iOS, Windows Phone, etc. \\ \texttt{Android}\slashsep\texttt{Java}\slashsep\texttt{iOS}\slashsep\texttt{Objective-C}\slashsep\texttt{Javascript}\slashsep\texttt{Windows Phone}\slashsep\texttt{C\#}\slashsep\texttt{BlackBerry}}
+		{
+            VMT's product Ramp was a mobile enterprise application platform aimed at managing a complete enterprise environment to build and deploy secure, native apps across multiple platforms.
+            \begin{itemize}[nosep, leftmargin=*]
+                \item Developed and maintained Ramp virtual machines for multiple platforms, e.g. Android, iOS, Windows Phone, Blackberry, etc.
+            \end{itemize}
+            \texttt{Android}\pipesep\texttt{Java}\pipesep\texttt{iOS}\pipesep\texttt{Objective-C}\pipesep\texttt{Javascript}\pipesep\texttt{Windows Phone}\pipesep\texttt{C\#}\pipesep\texttt{BlackBerry}
+        }
+ 
 	\entry
-		{2008 -- 3/2010\\\footnotesize{full time}}
-		{Perceive {\normalfont\small (South Africa)}}
+		{1/2007 -- 3/2010\\\footnotesize{full time}}
+		{Perceive {\normalfont\small -- Cape Town, South Africa}}
 		{Senior Software Developer}
-		{Perceive provided intelligent surveillance solutions to various security concerns. I mainly designed and developed the surveillance system's monitor application.\\ \texttt{Python}\slashsep\texttt{OpenCV}\slashsep\texttt{NumPy}}
-	\entry
-		{2007\\\footnotesize{part time}}
-		{Perceive {\normalfont\small (South Africa)}}
-		{Software Developer}
-		{I assisted in the development of various surveillance algorithms, e.g. human detection and fall detection.\\ \texttt{Python}\slashsep\texttt{OpenCV}\slashsep\texttt{NumPy}}
+		{
+            Provider of intelligent surveillance solutions to various security concerns. 
+            \begin{itemize}[nosep, leftmargin=*]
+                \item Developed the surveillance system's monitor application.
+                \item Assisted in the development of various surveillance algorithms, e.g. human detection and fall detection.
+            \end{itemize}
+            \texttt{Python}\pipesep\texttt{OpenCV}\pipesep\texttt{NumPy}
+        }
 \end{entrylist}
 
 %----------------------------------------------------------------------------------------
@@ -228,23 +311,22 @@
 
 \cvsect{Education}
 
-\begin{entrylist}
-	\entry
-		{2005 -- 2008}
-		{Master of Science in Engineering (MScEng) in Applied Mathematics}
-		{Stellenbosch University}
-		{My thesis was \textit{Metric reconstruction of multiple rigid bodies}. I developed a structure from motion (SfM) system that reconstructs, from a video or photo sequence, the 3D structure and motion of multiple rigid bodies. The reconstruction is identical up to a similarity transformation and assumes a projective camera model with optional provision for camera calibration.}
-	\entry
-		{2004}
-		{Bachelor of Science with Honours (BScHons) in Computer Science}
-		{Stellenbosch University}
-		{My project was developing a system that attempts to maximize profit when a stock entity of fixed dimensions is guillotine-cut into smaller sub-entities of varied dimensions and profit.}
-	\entry
-		{2001 -- 2003}
-		{Bachelor of Science (BSc) in Mathematical Science}
-		{Stellenbosch University}
-		{I majored in Computer Science and Applied Mathematics.}
-\end{entrylist}
+\parentry
+    {Master of Science in Engineering (MScEng) in Applied Mathematics {\normalfont\small -- cum laude}}
+    {Stellenbosch University}
+    {
+        Thesis: \textit{"Metric reconstruction of multiple rigid bodies"} -- a structure from motion (SfM) system that reconstructs, from a video or photo sequence, the 3D structure and motion of multiple rigid bodies. The reconstruction is identical up to a similarity transformation and assumes a projective camera model with optional provision for camera calibration.
+    }
+    
+\parentry
+    {Bachelor of Science with Honours (BScHons) in Computer Science}
+    {Stellenbosch University}
+    {}
+
+\parentry
+    {Bachelor of Science (BSc) in Mathematical Science}
+    {Stellenbosch University}
+    {Majored in Computer Science and Applied Mathematics.}
 
 %----------------------------------------------------------------------------------------
 

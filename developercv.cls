@@ -202,5 +202,21 @@
 		#4 % Entry description text
 	}\\\\}
 
+ \newcommand{\parentry}[3]{% First argument is for the bold entry heading, second is for the bold right-aligned entry qualifier and the third is for the entry description
+	&\parbox[t]{1.0\textwidth}{% 82.5% of the text width of the page
+		\textbf{#1}% Entry heading text
+		\hfill% Horizontal whitespace
+		{\footnotesize \textbf{\textcolor{black}{#2}}}\\% Right-aligned entry qualifier text
+		#3 % Entry description text
+	}\\\\}
+
+  \newcommand{\parentryBasic}[1]{
+	&\parbox[t]{1.0\textwidth}{% 82.5% of the text width of the page
+		\hfill% Horizontal whitespace
+		\\% Right-aligned entry qualifier text
+		#1 % Entry description text
+	}\\\\}
+
 % Command to output a separator slash between lists, e.g. '  /  '
 \newcommand{\slashsep}{\hspace{3mm}/\hspace{3mm}}
+\newcommand{\pipesep}{\hspace{3mm}|\hspace{3mm}}
